@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcebb6;
+    color: #221811;
+    /*some browser cannot accept certail font
+    sans-serif (normally can be accept for most browser)*/
+    font-family: Verdana, Arial, sans-serif; 
+    background-image: url(../JavaJam/Photo/background.gif)
+}
+header{
+    background-color: #d2b48c;
+    /* text-align: center; */
+    height: 150px;
+    background-image: url(../JavaJam/Photo/javajamlogo.jpg);
+    background-repeat: no-repeat;
+}
+
+h1{
+    /* line-height: 200%; ???*/
+    padding-top: 30px;
+    padding-left: 220px;
+    font-size: 3em;
+    
+}
+h4{ /*music page*/
+    background-color: #d2b48c;
+    font-size: 1.2em;
+    padding-left: .5em;
+    /* padding-bottom: .25em; */
+
+    padding-bottom: 0; /**/
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814;/*thickness //type of line //color*/
+    clear: left;
+}
+nav{
+    text-align: center;
+    font-weight: bold; /*distance btw the text      or
+    <a href="index.html">Home</a>   &nbsp;  (if use <b>)*/
+    font-size: 1.5em;
+    padding-top: 10px;
+
+    float: left;  /*positional eliment*/
+    width: 200px; /*on left*/
+}
+footer{
+    background-color: #d2b48c;
+    font-size: .6em; /*1 = original, font become smaller*/
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811;
+}
+/*id name use #*/
+#wrapper{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #fef6c2; */
+    max-width: 950px;
+    min-width: 1280px;
+    box-shadow: 30px 30px 30px #333333;/*(left right-if negative, move to left)/(top bottom)/(blur effect)*/
+    background-color: #231814;
+}
+/*----------Lab 4----------*/
+nav a{
+    text-decoration: none;
+}
+nav a:link{
+    color: #fef6c2;
+}
+nav a:visited{
+    color: #d2b48c;
+}
+nav a:hover{
+    color: #cc9933;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+main{
+    /* padding: 0em 2em 2em 2em;top rignt bottom left */
+    padding: 0 0 2em 0em;
+    margin-left: 200px;
+    background-color: #fef6c2;
+}
+/*class name start with a dot*/
+.details{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#heroroad{
+    background-image: url(../JavaJam/Photo/heroroad.jpg);
+    background-size: 100% 100%; /*width and height*/
+    height: 250px;
+}
+#heromugs{
+    background-image: url(../JavaJam/Photo/heromugs.jpg);
+    background-size: 100% 100%; /*width and height*/
+    height: 250px;
+}
+#heroguitar{
+    background-image: url(../JavaJam/Photo/heroguitar.jpg);
+    background-size: 100% 100%; /*width and height*/
+    height: 250px;
+}
+main h2, main h3, main h4, main p, main div, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+
+.floatleft{
+    float: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+header, nav, main, footer{
+    display: block;
+}
+table{
+    width: 90%;
+    background-color: #ffffcc;
+    border: 2px solid black;
+
+    border-collapse: collapse; /*collapse / seperate*/
+    /* border-collapse: separate;
+    border-spacing: 0px; */
+    margin-left: auto;
+    margin-right: auto;
+} 
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+tr:nth-of-type(odd){/*all the odd num of tr*/
+    background-color: #d2b48c;
+}  
+
+/* -------------jobs page---------- */
+form{
+    padding: 2em;
+}
+label{
+    float: left; /*align in a line*/
+    display: block; /*take full width */
+    text-align: right;
+    width: 8em;
+    padding-right: 1em; /*between label and textbox*/
+}
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+#mySubmit{
+    margin-left: 9.5em;
+}
+#herojobs{
+    background-image: url(../JavaJam/Photo/herojobs.jpg);
+    height: 250px;
+    background-size: 100% 100%; /*height/width because the original img is bigger*/
+}
+
+
+@media only screen and (max-width:1024px){
+    body{
+        background-image: none;
+        margin: 0;
+    }
+
+    #wrapper{
+        width: auto;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        min-width: 0;
+
+    }
+
+    header{
+        border-bottom: 5px solid #f3f6c2;
+    }
+    h1{
+        margin-top: 0%;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+    nav{
+        float: none;
+        width: auto;
+        padding-top: 0;
+        margin: 10px;
+        font-size: 1.3em;
+
+    }
+
+    nav li{
+        display:inline-block
+        /* The display choice have none= not will appear in the web pages ,inline= not margin happened the text or content does not start in new-line,block= start in new-line with margin and inline-block= margin will happen but does not start in new line about the content*/
+    }
+
+    nav a{
+        padding: 1em;
+        width: 8em;
+        font-size: bold;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: o;
+
+    }
+
+    main{
+        margin: 0%;
+    }
+
+} /*This page changes will happened when the display is below than the width 1024px*/
+
+@media only screen and (max-width:760px){
+    /*The webpage design for the handphone user to improve the vision feel*/
+     header{
+        background-image: none; /*Disappear the  logo image*/
+        height: 120px;
+
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+
+    }
+
+    nav{
+        margin: 0;
+
+    }
+
+    nav a{
+        display: block;
+        padding: 0.2em;
+        
+        width: auto;
+        border-bottom: 1px solid #fef6c2;
+
+    }
+
+    nav li{
+        display: block;
+        /* The display will show without margin and does not show it in new lines. / */
+    }
+
+    main{
+        padding-top: 3px;
+    }
+    h2{
+        padding: 0.5em 0 0 0.5em;
+
+
+    }
+    .details{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #heroroad, #heromugs ,#heroguitar , #herojobs{
+        background-image: none;
+        height: auto;
+
+    }
+
+    .floatleft{
+        padding-right: 0.5em;
+        padding-left: 0.5em
+
+    }
+
+}
